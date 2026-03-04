@@ -26,7 +26,7 @@ A modern, high-performance node-based visual programming environment built with 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/aiflow.git
+   git clone https://github.com/2Dev-Community/aiflow.git
    cd aiflow
    ```
 
