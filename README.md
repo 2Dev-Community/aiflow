@@ -120,4 +120,4 @@ If you find a bug (like an edge not aligning properly, or a z-index issue), plea
 
 ---
 
-_Built with ❤️ using Nuxt 3 and Tailwind CSS._
+_Built with ❤️ using Nuxt 4, Vue 3, Tailwind CSS, and Nuxt UI._
