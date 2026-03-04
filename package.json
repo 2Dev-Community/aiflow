@@ -1,5 +1,5 @@
 {
-  "name": "ai",
+  "name": "aiflow",
   "private": true,
   "type": "module",
   "scripts": {

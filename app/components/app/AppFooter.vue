@@ -9,12 +9,12 @@
           <div
             class="text-[18px] font-[800] tracking-[-0.02em] text-slate-900 dark:text-slate-100 mb-4"
           >
-            <span>Chansy AI</span>
+            <span>AIFlow</span>
           </div>
           <p
             class="text-[14px] leading-[1.6] text-slate-500 dark:text-slate-400"
           >
-            The next generation of visual automation powered by Chansy AI.
+            The next generation of visual automation powered by AIFlow.
           </p>
         </div>
 
@@ -120,7 +120,7 @@
       >
         <div class="flex items-center">
           <p class="text-[13px] text-slate-500 dark:text-slate-400">
-            Built with Chansy AI • © {{ new Date().getFullYear() }}
+            Built with AIFlow • © {{ new Date().getFullYear() }}
           </p>
         </div>
 

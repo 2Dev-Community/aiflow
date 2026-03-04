@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: "Workflows | Chansy AI" });
+useHead({ title: "Workflows | AIFlow" });
 definePageMeta({ layout: "workflow" });
 
 const { workflows, createWorkflow, deleteWorkflow, refresh } =
@@ -65,7 +65,7 @@ function formatDate(iso: string) {
             <span
               class="text-[15px] font-[800] tracking-[-0.02em] whitespace-nowrap text-primary-500 dark:text-primary-400"
             >
-              Chansy AI
+              AIFlow
             </span>
           </NuxtLink>
           <div class="w-px h-5 bg-gray-200 dark:bg-gray-800" />

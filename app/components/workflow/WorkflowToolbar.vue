@@ -52,7 +52,7 @@ function commitName() {
         <span
           class="text-[14px] font-[800] tracking-[-0.02em] whitespace-nowrap text-primary-500 dark:text-primary-400"
         >
-          Chansy AI
+          AIFlow
         </span>
       </NuxtLink>
 

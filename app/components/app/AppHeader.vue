@@ -24,7 +24,7 @@ const isDark = computed({
           <span
             class="text-[20px] font-[800] tracking-[-0.02em] text-slate-900 dark:text-slate-100"
           >
-            Chansy AI
+            AIFlow
           </span>
         </NuxtLink>
 

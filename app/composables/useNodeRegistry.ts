@@ -1,8 +1,13 @@
 import type { NodeDefinition, NodeCategory } from "~/types/workflow";
 import { triggerNodes } from "~/data/nodes/triggers";
 import { actionNodes } from "~/data/nodes/actions";
+import { aiNodes } from "~/data/nodes/ai";
 
-const allNodes: NodeDefinition[] = [...triggerNodes, ...actionNodes];
+const allNodes: NodeDefinition[] = [
+  ...triggerNodes,
+  ...actionNodes,
+  ...aiNodes,
+];
 
 export function useNodeRegistry() {
   function getAll(): NodeDefinition[] {
@@ -28,6 +33,7 @@ export function useNodeRegistry() {
 
   const categories: { id: NodeCategory; label: string; icon: string }[] = [
     { id: "trigger", label: "Triggers", icon: "i-lucide-zap" },
+    { id: "ai", label: "AI Models", icon: "i-lucide-sparkles" },
     { id: "action", label: "Actions", icon: "i-lucide-bolt" },
     { id: "logic", label: "Logic", icon: "i-lucide-git-branch" },
     { id: "output", label: "Output", icon: "i-lucide-log-out" },

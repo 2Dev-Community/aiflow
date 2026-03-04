@@ -1,6 +1,6 @@
 // ─── Node Categories & Types ──────────────────────────────────────────────────
 
-export type NodeCategory = "trigger" | "action" | "logic" | "output";
+export type NodeCategory = "trigger" | "action" | "logic" | "output" | "ai";
 
 export type PortDirection = "input" | "output";
 

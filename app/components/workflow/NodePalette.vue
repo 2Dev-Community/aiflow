@@ -44,6 +44,7 @@ function onNodeClick(definition: NodeDefinition) {
 
 const categoryColorMap: Record<NodeCategory, string> = {
   trigger: "var(--color-primary-500)",
+  ai: "#7c3aed",
   action: "#0ea5e9",
   logic: "#ef4444",
   output: "#10b981",

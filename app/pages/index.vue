@@ -1,7 +1,7 @@
 <template>
   <div>
     <UPageHero
-      title="Visual Automation for Chansy AI"
+      title="Visual Automation for AIFlow"
       description="Build powerful, automated workflows with our intuitive visual builder. Connect your apps, transform data, and streamline your processes without writing a single line of code."
       :links="[
         {
@@ -68,7 +68,7 @@
 
     <UPageSection
       id="ai-intel"
-      title="The Intelligence of Chansy AI"
+      title="The Intelligence of AIFlow"
       description="More than just a canvas. Our proprietary AI engine works in the background to ensure your automations are resilient, efficient, and error-free."
       align="right"
       :features="[
@@ -76,7 +76,7 @@
           icon: 'i-lucide-brain-circuit',
           title: 'Predictive Node Placement',
           description:
-            'Chansy AI suggests the most likely next node based on your current workflow context, saving you time.',
+            'AIFlow suggests the most likely next node based on your current workflow context, saving you time.',
         },
         {
           icon: 'i-lucide-shield-alert',
@@ -217,7 +217,7 @@
 
     <UPageSection>
       <UPageCTA
-        title="Ready to automate with Chansy AI?"
+        title="Ready to automate with AIFlow?"
         description="Join thousands of teams building high-performance automations on a platform that grows with you."
         variant="subtle"
         :links="[

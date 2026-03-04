@@ -7,7 +7,7 @@ useHead({
   },
 });
 
-const title = "Chansy AI";
+const title = "AIFlow";
 const description =
   "Visual automation workflow builder — build powerful automations without code.";
 

@@ -39,9 +39,9 @@ const outputPorts = computed(() =>
   props.definition.ports.filter((p) => p.direction === "output"),
 );
 
-// Category -> gradient stops
 const categoryGradients: Record<string, [string, string]> = {
   trigger: ["var(--color-primary-600)", "var(--color-primary-500)"],
+  ai: ["#8b5cf6", "#7c3aed"], // Violet-500 to Violet-600
   action: ["#0284c7", "#0ea5e9"],
   logic: ["#dc2626", "#ef4444"],
   output: ["#059669", "#10b981"],

@@ -29,7 +29,7 @@ const {
   selectNode,
 } = useWorkflow(workflowId);
 
-useHead({ title: computed(() => `${workflow.value.name} | Chansy AI`) });
+useHead({ title: computed(() => `${workflow.value.name} | AIFlow`) });
 
 // ─── Canvas ref ──────────────────────────────────────────────────────────────
 
