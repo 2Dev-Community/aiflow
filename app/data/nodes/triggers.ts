@@ -1,0 +1,85 @@
+import type { NodeDefinition } from "~/types/workflow";
+
+export const triggerNodes: NodeDefinition[] = [
+  {
+    id: "trigger.manual",
+    label: "Manual Trigger",
+    description: "Start the workflow manually with a button click.",
+    category: "trigger",
+    icon: "i-lucide-play-circle",
+    color: "#10b981",
+    ports: [{ id: "out", label: "Output", direction: "output" }],
+    configSchema: [],
+  },
+  {
+    id: "trigger.webhook",
+    label: "Webhook",
+    description: "Trigger the workflow when an HTTP request is received.",
+    category: "trigger",
+    icon: "i-lucide-webhook",
+    color: "#059669",
+    ports: [{ id: "out", label: "Output", direction: "output" }],
+    configSchema: [
+      {
+        key: "path",
+        label: "Webhook Path",
+        type: "text",
+        placeholder: "/my-webhook",
+        defaultValue: "/webhook",
+        required: true,
+        description: "The URL path that will trigger this workflow.",
+      },
+      {
+        key: "method",
+        label: "HTTP Method",
+        type: "select",
+        defaultValue: "POST",
+        options: [
+          { label: "GET", value: "GET" },
+          { label: "POST", value: "POST" },
+          { label: "PUT", value: "PUT" },
+          { label: "DELETE", value: "DELETE" },
+        ],
+      },
+      {
+        key: "auth",
+        label: "Require Authentication",
+        type: "toggle",
+        defaultValue: false,
+      },
+    ],
+  },
+  {
+    id: "trigger.schedule",
+    label: "Schedule",
+    description: "Trigger the workflow on a time-based schedule (cron).",
+    category: "trigger",
+    icon: "i-lucide-clock",
+    color: "#00c16a",
+    ports: [{ id: "out", label: "Output", direction: "output" }],
+    configSchema: [
+      {
+        key: "cron",
+        label: "Cron Expression",
+        type: "cron",
+        placeholder: "0 * * * *",
+        defaultValue: "0 * * * *",
+        required: true,
+        description: "Standard cron expression (e.g. every hour: 0 * * * *)",
+      },
+      {
+        key: "timezone",
+        label: "Timezone",
+        type: "select",
+        defaultValue: "UTC",
+        options: [
+          { label: "UTC", value: "UTC" },
+          { label: "Asia/Bangkok", value: "Asia/Bangkok" },
+          { label: "Asia/Tokyo", value: "Asia/Tokyo" },
+          { label: "Europe/London", value: "Europe/London" },
+          { label: "America/New_York", value: "America/New_York" },
+        ],
+      },
+    ],
+  },
+];
